@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <LinearLayout
+        android:id="@+id/LL_Top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/col_ReceiptNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="123456789"
+            android:textColor="#666"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/col_ReceiptDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="01-Nov-2019 00:00 PM"
+            android:textColor="#666"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL_Middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/LL_Top">
+
+        <TextView
+            android:id="@+id/col_MemberName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Member Name"
+            android:textColor="#666"/>
+
+        <TextView
+            android:id="@+id/col_MemberDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sab. No.: 000000 - Cont. No.: 0000000000"
+            android:textColor="#666"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL_Bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/LL_Middle">
+
+        <TextView
+            android:id="@+id/col_HeadName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Dues Head"
+            android:textColor="#666"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/col_Amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="KWD 0.000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/LL_Bottom"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

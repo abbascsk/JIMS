@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Receipt Number"
+        android:textColor="@color/colorPrimary"
+        android:selectAllOnFocus="true"/>
+
+    <EditText
+        android:id="@+id/txt_ReceiptNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:selectAllOnFocus="true"/>
+
+    <Button
+        android:id="@+id/btn_Reprint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Print Receipt"/>
+
+</LinearLayout>
